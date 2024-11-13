@@ -1,0 +1,66 @@
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <title>KİŞİSEL BİLGİLER FORMU</title>
+        <style>
+            h1{
+                font-size:300%;
+                color:purple;
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 20px;
+            }
+            label{
+                display: block;
+                margin-top:10px;
+                color:rgb(201, 46, 225);
+                font-size: large;
+            }
+            input, select{
+                border: 3px solid rgb(147, 10, 33);
+                padding: 8px;
+                margin-top: 5px;
+            }
+            button{
+                background-color: rgb(196, 50, 132);
+                border: 2px solid yellowgreen;
+                margin-top: 15px;
+                padding:10px 15px;
+                font-size: large;
+                color:aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Kişisel Bilgiler Formu</h1>
+        <form method="post" action="bilgi.php">
+        <h2>
+        <label for="Adınız">Adınız</label>
+        <input type="text" id="ad" placeholder="Adınız"><br>
+        </h2>
+         
+        <h2>
+        <label for="Soyad">Soyad</label>
+        <input type="text" id="soyad" placeholder="Soyad"><br>
+        </h2>
+        
+        <h2>
+        <label for="yas">Yaş</label>
+        <input type="number" id="yas" placeholder="yaş"><br>
+        </h2>
+
+        <h2>
+        <label for="boy">Boy</label>
+        <input type="number" id="boy" placeholder="boy"><br>
+        </h2>
+
+        <h2>
+        <label for="kilo">Kilo</label>
+        <input type="number" id="kilo" placeholder="kilo"><br>
+        </h2>
+        
+        <button type="submit">GÖNDER</button>
+        </form>
+    </body>
+    </html>
