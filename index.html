@@ -34,33 +34,32 @@
     </head>
     <body>
         <h1>Kişisel Bilgiler Formu</h1>
-        <form method="post" action="bilgi.php">
+        <form method="post" action="formgonder.php">
         <h2>
         <label for="Adınız">Adınız</label>
-        <input type="text" id="ad" placeholder="Adınız"><br>
+        <input type="text" id="ad" placeholder="Adınız" name="ad"><br>
         </h2>
          
         <h2>
         <label for="Soyad">Soyad</label>
-        <input type="text" id="soyad" placeholder="Soyad"><br>
+        <input type="text" id="soyad" placeholder="Soyadınız" name="soyad"><br>
         </h2>
         
         <h2>
         <label for="yas">Yaş</label>
-        <input type="number" id="yas" placeholder="yaş"><br>
+        <input type="number" id="yas" placeholder="Yaş" name="yas"><br>
         </h2>
 
         <h2>
         <label for="boy">Boy</label>
-        <input type="number" id="boy" placeholder="boy"><br>
+        <input type="number" id="boy" placeholder="Boy" name="boy"><br>
         </h2>
 
         <h2>
         <label for="kilo">Kilo</label>
-        <input type="number" id="kilo" placeholder="kilo"><br>
+        <input type="number" id="kilo" placeholder="Kilo" name="kilo"><br>
         </h2>
-        
-        <button type="submit">GÖNDER</button>
+        <input type="submit" value="Kaydet">
         </form>
     </body>
     </html>
