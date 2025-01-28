@@ -1,65 +1,102 @@
+<!DOCTYPE html>
 <html lang="tr">
-    <head>
-        <meta charset="UTF-8">
-        <title>KİŞİSEL BİLGİLER FORMU</title>
-        <style>
-            h1{
-                font-size:300%;
-                color:purple;
-            }
-            body{
-                font-family: Arial, Helvetica, sans-serif;
-                margin: 20px;
-            }
-            label{
-                display: block;
-                margin-top:10px;
-                color:rgb(201, 46, 225);
-                font-size: large;
-            }
-            input, select{
-                border: 3px solid rgb(147, 10, 33);
-                padding: 8px;
-                margin-top: 5px;
-            }
-            button{
-                background-color: rgb(196, 50, 132);
-                border: 2px solid yellowgreen;
-                margin-top: 15px;
-                padding:10px 15px;
-                font-size: large;
-                color:aquamarine;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Kişisel Bilgiler Formu</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasta Kayıt Formu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-size: 16px;
+            margin-bottom: 8px;
+            display: block;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            text-align: left;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hasta Kayıt Formu</h1>
+    <div class="form-container">
         <form method="post" action="formgonder.php">
-        <h2>
-        <label for="Adınız">Adınız</label>
-        <input type="text" id="ad" placeholder="Adınız" name="ad"><br>
-        </h2>
-         
-        <h2>
-        <label for="Soyad">Soyad</label>
-        <input type="text" id="soyad" placeholder="Soyadınız" name="soyad"><br>
-        </h2>
-        
-        <h2>
-        <label for="yas">Yaş</label>
-        <input type="number" id="yas" placeholder="Yaş" name="yas"><br>
-        </h2>
+            <h2>
+            <label for="Ad Soyad">Ad Soyad</label>
+            <input type="text" id="adsoyad" placeholder="Adınız ve Soyadınız" name="adsoyad"><br>
+            </h2>
+            
+            <h2>
+            <label for="yas">Yaş</label>
+            <input type="number" id="yas" placeholder="Yaş" name="yas"><br>
+            </h2>
+            
+            <label for="cinsiyet">Cinsiyet:</label>
+            <select id="cinsiyet" name="cinsiyet">
+                <option value="secmedi">Cinsiyet Seçiniz</option>
+                <option value="erkek">Erkek</option>
+                <option value="kadin">Kadın</option>
+            </select>
 
-        <h2>
-        <label for="boy">Boy</label>
-        <input type="number" id="boy" placeholder="Boy" name="boy"><br>
-        </h2>
-
-        <h2>
-        <label for="kilo">Kilo</label>
-        <input type="number" id="kilo" placeholder="Kilo" name="kilo"><br>
-        </h2>
-        <input type="submit" value="Kaydet">
-        </form>
-    </body>
-    </html>
+            
+            <h2>
+            <label for="boy">Boy</label>
+            <input type="number" id="boy" placeholder="Boy" name="boy"><br>
+            </h2>
+    
+            <h2>
+            <label for="kilo">Kilo</label>
+            <input type="number" id="kilo" placeholder="Kilo" name="kilo"><br>
+            </h2>
+            <input type="submit" value="Hasta Ekle">
+    </div>
+</body>
+</html>
